@@ -4,7 +4,7 @@ Pequenas ferramentas
 ## Transformar em executavel
 No terminal, digite:
 $ pip install pyinstaller <br>
-$ pyinstaller <nome do arquivo>
+$ pyinstaller 'nome do arquivo'
 
 
 ## adicionar .json 
