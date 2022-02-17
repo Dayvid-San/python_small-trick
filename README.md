@@ -3,7 +3,7 @@ Pequenas ferramentas
 
 ## Transformar em executavel
 No terminal, digite:
-$ pip install pyinstaller
+$ pip install pyinstaller <br>
 $ pyinstaller <nome do arquivo>
 
 
