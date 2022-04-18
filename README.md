@@ -1,5 +1,16 @@
 # Small Tricks
-Pequenas ferramentas
+Pequenas ferramentas e truques usando python
+
+### Não se perca! ;)
+<ul>
+    <li>
+        <a href="#json">Add arquivos JSON</a>
+    </li>
+    <li>
+        <a href="#interface">Interface Gráfica Simples</a>
+    </li>
+</ul>
+
 
 ## Transformar em executavel
 No terminal, digite:
@@ -7,7 +18,7 @@ $ pip install pyinstaller <br>
 $ pyinstaller 'nome do arquivo'
 
 
-## adicionar .json 
+## <div name='json'>Adicionar .json</div>
 ````py
 import json
 
@@ -18,7 +29,7 @@ with open(r'.\dados.json', 'w') as json_file:
 
 ````
 
-## Interface simples
+## <div name='interface'>Interface simples</div>
 ````bash
 pip install PySimpleGUI
 ````
