@@ -9,6 +9,9 @@ Pequenas ferramentas e truques usando python
     <li>
         <a href="#interface">Interface Gráfica Simples</a>
     </li>
+    <li>
+        <a href="#pdf">Criar PDF</a>
+    </li>
 </ul>
 
 
@@ -52,3 +55,11 @@ layout = [
 
 ### Estilização
 O **size** define o tamanho 
+
+
+
+## <div name='pdf'>Criar PDF</div>
+````bash
+pip install reportlab
+````
+
