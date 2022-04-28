@@ -12,6 +12,9 @@ Pequenas ferramentas e truques usando python
     <li>
         <a href="#pdf">Criar PDF</a>
     </li>
+    <li>
+        <a href="#gerandoSenhas">Gerador de senhas</a>
+    </li>
 </ul>
 
 
@@ -63,3 +66,21 @@ O **size** define o tamanho
 pip install reportlab
 ````
 
+## <div name='gerandoSenhas'>Gerando senhas</div>
+Necessário importar:
+````py
+import random
+from string import digits
+from string import punctuation
+from string import ascii_letters
+````
+
+Primeiro juntamos todos os simbolos e letras:
+````py
+symbols = ascii_letters + digits + punctuation
+````
+
+e então os juntamos aleatóriamente com:
+````py
+password = "".join(secure_random.choice(symbols) for i in range(30)) 
+````
