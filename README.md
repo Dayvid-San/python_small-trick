@@ -84,3 +84,24 @@ e então os juntamos aleatóriamente com:
 ````py
 password = "".join(secure_random.choice(symbols) for i in range(30)) 
 ````
+
+## <div name='audioemvideo'>Transformando áudio em vídeo</div>
+Necessário importar:
+````bash
+pip install moviepy
+````
+
+Primeiro carregamos o arquivo do vídeo
+````py
+video = moviepy.editor.VideoFileClip("video.mp4")
+````
+
+e então extraimos o áudio
+````py
+audio_data = video.audio
+````
+
+para depois criarmos o arquivo de áudio nomeando ele
+````py
+audio_data.write_audiofile("audio_do_video.mp3"
+````
