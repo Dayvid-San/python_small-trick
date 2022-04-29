@@ -15,6 +15,9 @@ Pequenas ferramentas e truques usando python
     <li>
         <a href="#gerandoSenhas">Gerador de senhas</a>
     </li>
+    <li>
+        <a href="#audioemvideo">Transformando vídeo em áudio</a>
+    </li>
 </ul>
 
 
@@ -103,5 +106,5 @@ audio_data = video.audio
 
 para depois criarmos o arquivo de áudio nomeando ele
 ````py
-audio_data.write_audiofile("audio_do_video.mp3"
+audio_data.write_audiofile("audio_do_video.mp3")
 ````
