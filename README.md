@@ -18,6 +18,9 @@ Pequenas ferramentas e truques usando python
     <li>
         <a href="#audioemvideo">Transformando vídeo em áudio</a>
     </li>
+    <li>
+        <a href="#aboutNumber">Descobrindo sobre o número</a>
+    </li>
 </ul>
 
 
