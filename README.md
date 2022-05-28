@@ -108,3 +108,28 @@ para depois criarmos o arquivo de áudio nomeando ele
 ````py
 audio_data.write_audiofile("audio_do_video.mp3")
 ````
+
+## <div name='aboutNumber'>Descobrindo sobre o numero</div>
+Para descobrirmos mais sobre um número de telefone vamos usar a biblioteca **Phonenumbers**.<br>
+Para instalar o **Phonenumbers**:
+````bash
+pip install phonenumbers
+````
+
+Primeiro, capturamos o numero de telefone e ajustamos para usar o phonenumbers
+````py
+telefone_ajustado = phonenumbers.parse(telefone)
+````
+
+Para descobrir a localização, usamos o Geocoder.
+````py
+from phonenumbers import geocoder
+local = geocoder.description_for_number(telefone_ajustado, 'pt-br')
+````
+
+Bem! Para deixar o número no formato especifico do país de origem ou para o formato internacional, podemos usar o format_number
+````py
+telefone_formatado = phonenumbers.format_number(telefone_formulario_ajustado,phonenumbers.PhoneNumberFormat.NATIONAL)
+
+telefone_internacional = phonenumbers.format_number(telefone_ajustado,phonenumbers.PhoneNumberFormat.INTERNATIONAL)
+````
