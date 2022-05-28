@@ -26,9 +26,10 @@ Pequenas ferramentas e truques usando python
 
 ## Transformar em executavel
 No terminal, digite:
-$ pip install pyinstaller <br>
+````bash
+$ pip install pyinstaller
 $ pyinstaller 'nome do arquivo'
-
+````
 
 ## <div name='json'>Adicionar .json</div>
 ````py
