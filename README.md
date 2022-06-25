@@ -21,6 +21,9 @@ Pequenas ferramentas e truques usando python
     <li>
         <a href="#aboutNumber">Descobrindo sobre o número</a>
     </li>
+    <li>
+        <a href="#cutImage">Cortando Imagem</a>
+    </li>
 </ul>
 
 
@@ -136,4 +139,26 @@ Bem! Para deixar o número no formato especifico do país de origem ou para o fo
 telefone_formatado = phonenumbers.format_number(telefone_formulario_ajustado,phonenumbers.PhoneNumberFormat.NATIONAL)
 
 telefone_internacional = phonenumbers.format_number(telefone_ajustado,phonenumbers.PhoneNumberFormat.INTERNATIONAL)
+````
+
+
+## <div name="cutImage">Cortando Imagens</div>
+Para cortar uma imagem é necessário importar o Pillow
+````bash
+pip install pillow
+````
+
+Carregar a imagem original
+````py
+imagem = Image.open(r'mia.jpg')
+````
+
+Passar as coordenadas
+````py
+esquerda, cima, direita, baixo = (250,10,500,250)
+````
+
+E então usar o **Crop** para cortar a Imagem
+````py
+imagem_cortada = imagem.crop((esquerda, cima, direita, baixo))
 ````
