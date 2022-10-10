@@ -162,3 +162,36 @@ E então usar o **Crop** para cortar a Imagem
 ````py
 imagem_cortada = imagem.crop((esquerda, cima, direita, baixo))
 ````
+
+
+## <div name="instaFollwers">Listando seguidores do instagram</div>
+
+Para isso é necessário importar o Instaloader.<br>
+````bash
+pip install instaloader
+````
+
+Carregue a função desejada dentro de uma variável e ponha a sua senha e usuário para login.
+
+````py
+insloa = instaloader.Instaloader()
+insloa.login('Usuario', 'Senha')
+````
+
+Carregando seguidores e os que está seguindo
+````py
+followers = instaloader.Profile.from_username(insloa, 'dayvid_jr_').get_followers()
+followees = instaloader.Profile.from_username(insloa, 'dayvid_jr_').get_followees()
+````
+
+Visualizando os dados
+````py
+# Seguidores
+print(str(followers._data['count']))
+
+# Seguindo
+print(str(followees._data['count']))
+
+# Informação de seguidores
+print(str(followees._data['edges']))
+````
